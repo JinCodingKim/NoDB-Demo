@@ -17,10 +17,10 @@ class App extends Component {
   }
 
   componentDidMount() {
+    //Hit the .get('/api/characters') endpoint and set the characters state to the res.data
     axios
       .get("/api/characters")
       .then(res => {
-        console.log(res);
         this.setState({
           characters: res.data
         });
@@ -29,6 +29,7 @@ class App extends Component {
   }
 
   updateCharacter(id, name, birth_year) {
+    //Hit the .put('/api/character/:id') endpoint and set the characteres state to the new data
     axios
       .put(`/api/character/${id}`, { name, birth_year })
       .then(res => {
@@ -40,6 +41,7 @@ class App extends Component {
   }
 
   deleteCharacter(id) {
+    //Hit the .delete('/api/character/:id') endpoint and set the characters state to the new data
     axios
       .delete(`/api/character/${id}`)
       .then(res => {
@@ -51,6 +53,7 @@ class App extends Component {
   }
 
   newCharacter(name, birth_year) {
+    //Hit the .post('/api/characters') endpoint and set the characters state to the new data
     axios
       .post("/api/characters", { name, birth_year })
       .then(res => {
