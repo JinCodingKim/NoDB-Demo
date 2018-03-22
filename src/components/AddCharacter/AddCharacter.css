@@ -8,23 +8,23 @@
 .add-button {
   width: 75px;
   height: 25px;
-  border: 2px solid #222;
+  border: 2px solid black;
   border-radius: 2px;
   margin: 5px 0 0 0;
   background-color: rgb(212, 212, 0);
-  color: #222;
+  color: black;
   outline: none;
   font-weight: bold;
 }
 
 .add-button:hover {
-  border: 2px solid #222;
-  background-color: #222;
+  border: 2px solid black;
+  background-color: black;
   color: rgb(212, 212, 0);
 }
 
 .add-input {
-  background-color: #222;
+  background-color: black;
   color: rgb(212, 212, 0);
   outline: none;
   border: none;

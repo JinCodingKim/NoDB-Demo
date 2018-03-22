@@ -1,7 +1,7 @@
 .card-main {
   width: 200px;
   height: 150px;
-  border: 2px solid #222;
+  border: 2px solid black;
   border-radius: 2px;
   display: flex;
   flex-direction: column;
@@ -12,23 +12,23 @@
 .card-button {
   width: 75px;
   height: 25px;
-  border: 2px solid #222;
+  border: 2px solid black;
   border-radius: 2px;
   background-color: rgb(212, 212, 0);
-  color: #222;
+  color: black;
   outline: none;
   margin: 0 2.5px 0 2.5px;
   font-weight: bold;
 }
 
 .card-button:hover {
-  border: 2px solid #222;
-  background-color: #222;
+  border: 2px solid black;
+  background-color: black;
   color: rgb(212, 212, 0);
 }
 
 .card-input {
-  background-color: #222;
+  background-color: black;
   color: rgb(212, 212, 0);
   outline: none;
   border: none;

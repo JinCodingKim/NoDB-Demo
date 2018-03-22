@@ -66,6 +66,7 @@ class App extends Component {
 
   render() {
     const { characters } = this.state;
+    //Map over this.state.characters: for each iteration, create/invoke a Character Component for that element... storing the element's name, birth, updateCharacter method, and deleteCharacter method down.
     let charList = characters.map(character => {
       let id = character.url.split("/")[5];
       return (
@@ -87,9 +88,11 @@ class App extends Component {
         </header>
         <div className="App-body">
           <div className="add-container">
+            {/*Invoke AddCharacter Component, passing newCharacter method down */}
             <AddCharacter newCharacter={this.newCharacter} />
           </div>
           <h3>Character List</h3>
+          {/*Display value of charList*/}
           <div className="card-container">{charList}</div>
         </div>
       </div>
