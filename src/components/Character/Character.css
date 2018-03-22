@@ -1,0 +1,39 @@
+.card-main {
+  width: 200px;
+  height: 150px;
+  border: 2px solid #222;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.card-button {
+  width: 75px;
+  height: 25px;
+  border: 2px solid #222;
+  border-radius: 2px;
+  background-color: rgb(212, 212, 0);
+  color: #222;
+  outline: none;
+  margin: 0 2.5px 0 2.5px;
+  font-weight: bold;
+}
+
+.card-button:hover {
+  border: 2px solid #222;
+  background-color: #222;
+  color: rgb(212, 212, 0);
+}
+
+.card-input {
+  background-color: #222;
+  color: rgb(212, 212, 0);
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 3px;
+  margin: 6px 0 10px 0;
+  height: 25px;
+}

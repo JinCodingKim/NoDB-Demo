@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(212, 212, 0);
+}
+
+.App-header {
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
+}
+
+#logo {
+  width: 200px;
+  height: 100px;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 175px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 90%;
+}
