@@ -13,7 +13,7 @@ module.exports = {
           characters = list.data.results;
           res.status(200).json(characters);
         })
-        .catch(res => res.status(500).json(res));
+        .catch(err => res.status(500).json(err));
     } else {
       //Otherwise just send the characters
       res.status(200).json(characters);
