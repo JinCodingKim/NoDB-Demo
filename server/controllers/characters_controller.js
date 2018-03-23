@@ -5,15 +5,10 @@ let newId = 9999;
 
 module.exports = {
   getCharacters: (req, res) => {
-    let { number } = req.query;
-    //If query number does not exist, set the number to one
-    if (!number) {
-      number = 1;
-    }
     //If characters does not have a length, go fetch characters from the swapi api and send the response
     if (!characters.length) {
       axios
-        .get(`http://swapi.co/api/people/?page=${number}`)
+        .get(`http://swapi.co/api/people`)
         .then(list => {
           characters = list.data.results;
           res.status(200).json(characters);
